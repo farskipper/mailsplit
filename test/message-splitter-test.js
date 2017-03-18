@@ -1,5 +1,6 @@
 'use strict';
 
+const BufferS = require('buffer-shims');
 const fs = require('fs');
 const crypto = require('crypto');
 const MessageSplitter = require('../lib/message-splitter');
@@ -207,7 +208,7 @@ module.exports['Split multipart message'] = test => {
         test.done();
     });
 
-    splitter.end(Buffer.from('Content-type: multipart/mixed; boundary=ABC\r\n' +
+    splitter.end(BufferS.from('Content-type: multipart/mixed; boundary=ABC\r\n' +
         'X-Test: =?UTF-8?Q?=C3=95=C3=84?= =?UTF-8?Q?=C3=96=C3=9C?=\r\n' +
         'Subject: ABCDEF\r\n' +
         '\r\n' +
@@ -254,7 +255,7 @@ module.exports['Split multipart message without terminating boundary'] = test =>
         test.done();
     });
 
-    splitter.end(Buffer.from('Content-type: multipart/mixed; boundary=ABC\r\n' +
+    splitter.end(BufferS.from('Content-type: multipart/mixed; boundary=ABC\r\n' +
         'X-Test: =?UTF-8?Q?=C3=95=C3=84?= =?UTF-8?Q?=C3=96=C3=9C?=\r\n' +
         'Subject: ABCDEF\r\n' +
         '\r\n' +
@@ -361,7 +362,7 @@ module.exports['Split multipart message with embedded message/rfc88'] = test => 
         test.done();
     });
 
-    splitter.end(Buffer.from('Content-type: multipart/mixed; boundary=ABC\r\n' +
+    splitter.end(BufferS.from('Content-type: multipart/mixed; boundary=ABC\r\n' +
         'X-Test: =?UTF-8?Q?=C3=95=C3=84?= =?UTF-8?Q?=C3=96=C3=9C?=\r\n' +
         'Subject: ABCDEF\r\n' +
         '\r\n' +
@@ -416,7 +417,7 @@ module.exports['Split multipart message and ignore embedded message/rfc88'] = te
         test.done();
     });
 
-    splitter.end(Buffer.from('Content-type: multipart/mixed; boundary=ABC\r\n' +
+    splitter.end(BufferS.from('Content-type: multipart/mixed; boundary=ABC\r\n' +
         'X-Test: =?UTF-8?Q?=C3=95=C3=84?= =?UTF-8?Q?=C3=96=C3=9C?=\r\n' +
         'Subject: ABCDEF\r\n' +
         '\r\n' +
