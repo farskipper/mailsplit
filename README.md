@@ -1,4 +1,7 @@
-# mailsplit
+# Fork of mailsplit
+tweaking [mailsplit]() to work on node 4.3 so it works on AWS lambda
+
+[![Build Status](https://api.travis-ci.org/farskipper/mailsplit.svg)](http://travis-ci.org/farskipper/mailsplit)
 
 Split an email message stream into structured parts and join these parts back into an email message stream. If you do not modify the parsed data then the rebuilt message should be an exact copy of the original.
 

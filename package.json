@@ -27,5 +27,12 @@
   "files": [
     "lib",
     "index.js"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/farskipper/mailsplit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/farskipper/mailsplit/issues"
+  }
 }
