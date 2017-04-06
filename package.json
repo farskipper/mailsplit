@@ -1,7 +1,7 @@
 {
   "name": "mailsplit-node4",
-  "version": "4.0.1",
-  "description": "tweaking mailsplit to work on node 4.3 so it works on AWS lambda",
+  "version": "4.0.1-1",
+  "description": "tweaking mailsplit to work on node 4",
   "main": "index.js",
   "directories": {
     "test": "test"

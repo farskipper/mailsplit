@@ -1,5 +1,5 @@
 # Fork of mailsplit
-tweaking [mailsplit](https://github.com/andris9/mailsplit) to work on node 4.3 so it works on AWS lambda
+tweaking [mailsplit](https://github.com/andris9/mailsplit) to work on node 4
 
 [![Build Status](https://api.travis-ci.org/farskipper/mailsplit.svg)](http://travis-ci.org/farskipper/mailsplit)
 
